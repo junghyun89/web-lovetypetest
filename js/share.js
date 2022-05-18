@@ -1,14 +1,16 @@
 'use strict';
 
-const url = 'https://junghyun89.github.io/web-lovetypetest/';
+const url = 'https://lovetypetest12.netlify.app/';
 
 function setShare(){
   let resultImg = document.querySelector('#resultImg');
   let resultAlt = resultImg.firstElementChild.alt;
   const shareTitle = '십이간지 연애유형 결과';
   const shareDes = infoList[resultAlt].name;  
-  const shareImage = `${url}'img/image-'resultAlt'.png'`;
-  const shareURL = `${url}'page/result-'resultAlt'.html'`;
+  const shareImage = url + 'img/image-' + resultAlt + '.png';
+  const shareURL = url + 'sharepage/result-' + resultAlt + '.html';
+  console.log(shareImage);
+  console.log(shareURL);
 
   Kakao.Link.sendDefault({
     objectType: 'feed',
@@ -24,7 +26,7 @@ function setShare(){
 
     buttons: [
       {
-        title: '결과확인하기',
+        title: '결과 확인하기',
         link: {
           mobileWebUrl: shareURL,
           webUrl: shareURL,
