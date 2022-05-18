@@ -3,7 +3,6 @@
 const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
 const start_btn = document.querySelector("#start_btn");
-const share_btn = document.querySelector("#share_btn");
 const result = document.querySelector("#result");
 const endPoint = 12;
 const select = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
@@ -107,5 +106,5 @@ function begin() {
 }
 
 start_btn.addEventListener("click", begin);
-share_btn.addEventListener("click", kakaoShare);
+
 

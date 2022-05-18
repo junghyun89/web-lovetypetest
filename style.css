@@ -72,6 +72,12 @@ button:hover {
     text-align: center;
     border-radius: calc(var(--border-radius) * 2);
 }
+#shareResult {
+    width: 80%;
+    background-color: var(--beige-color);
+    text-align: center;
+    border-radius: calc(var(--border-radius) * 2);
+}
 .resultName {
     font-size: 1.625rem;
 }

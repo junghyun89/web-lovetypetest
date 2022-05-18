@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,16 +18,15 @@
     <link rel="apple-touch-icon-precomposed" href="img/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
+    <script defer src="js/data.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/share.js"></script>
     <title>십이간지 연애유형</title>
-    <script src="js/data.js" defer></script>
-    <script src="js/share.js" defer></script>
-    <script src="js/main.js" defer></script>
     <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
     <script>
         Kakao.init('863dc40922848268dedd4ece65bc2546');
         Kakao.isInitialized();
     </script>
-</head>
 </head>
 <body>
     <div class="container">
@@ -61,7 +61,7 @@
             <div class="resultDesc">
                 
             </div>
-            <button id="share_btn" class="mt-4 px-3 py-2">공유하기</button>
+            <button id="share_btn" class="mt-4 px-3 py-2" onclick="setShare()">공유하기</button>
         </section>
     </div>
 </body>
