@@ -7,7 +7,7 @@
     <meta name="keywords" content="십이간지 연애유형">
     <meta name="description" content="십이간지 연애유형">
 
-    <meta property="og:url" content="" />
+    <meta property="og:url" content="https://junghyun89.github.io/web-lovetypetest/" />
     <meta property="og:title" content="십이간지 연애유형" />
     <meta property="og:type" content="website" />
     <meta property="og:img" content="img/share.png" />
@@ -19,7 +19,13 @@
     <link href="style.css" rel="stylesheet">
     <title>십이간지 연애유형</title>
     <script src="js/data.js" defer></script>
+    <script src="js/share.js" defer></script>
     <script src="js/main.js" defer></script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script>
+        Kakao.init('863dc40922848268dedd4ece65bc2546');
+        Kakao.isInitialized();
+    </script>
 </head>
 </head>
 <body>
@@ -55,7 +61,7 @@
             <div class="resultDesc">
                 
             </div>
-            <button class="mt-4 px-3 py-2">공유하기</button>
+            <button id="share_btn" class="mt-4 px-3 py-2">공유하기</button>
         </section>
     </div>
 </body>
